@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "quartoCourseBlog"
+  title: "Gian Lima"
   navbar:
     right:
       - about.qmd
