@@ -3,17 +3,24 @@ project:
   output-dir: docs
 
 website:
-  title: "Gian Lima"
+  title: "Gian de Lima Santos"
+  reader-mode: true
   navbar:
+    background: "#FFFFFF" # white
+    foreground: "#133F87" # blue
+    search: true
+    pinned: true
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/CrumpLab/quartoCourseBlog
+        href: https://github.com/gianlima
       - icon: twitter
         href: https://twitter.com/MattCrumpLab
 format:
   html:
-    theme: cosmo
+    theme: 
+      - morph
+      - custom.scss
     css: styles.css
 
 editor: visual

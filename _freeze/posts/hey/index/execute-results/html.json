@@ -1,0 +1,16 @@
+{
+  "hash": "5a426682171ddcc084d2990ab9c4d7af",
+  "result": {
+    "markdown": "---\ntitle: \"How I make figures for a paper\"\nauthor: \"Matt Crump\"\ndate: \"2022-10-21\"\ncategories: [goals,general]\ntoc: true\ntoc-depth: 2\n---\n\n\n### Introspect on your own mental imagery\n\nThis assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\n\nYou should write a **minimum of 250 words**, but feel free to write more. Submit your document on blackboard by the due date.\n\n## My mental imagery\n\nMy mental imagery is like...\n\n::: callout-note\nNote that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2+2\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 4\n```\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: package 'ggplot2' was built under R version 4.2.2\n```\n:::\n\n```{.r .cell-code}\nx <- data.frame(a = 1:10, b = 1:10)\nggplot(data = x, aes(x = a, y = b)) +\n  geom_point()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

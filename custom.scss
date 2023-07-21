@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+$body-bg: #FFFFFF; 
+$body-color: #133F87;
+
+::-webkit-scrollbar {
+    // Width of vertical scroll bar
+    width: 10px;
+    // Height of horizontal scroll bar
+    height: 10px;
+
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c2c9d2;
+  }
+  
+  

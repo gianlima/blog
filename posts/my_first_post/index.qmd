@@ -1,26 +1,87 @@
 ---
-title: "My First post: changed"
-author: "Matt Crump"
-date: "2022-10-21"
-categories: [goals,general]
+title: "What I change on a panel figure for a paper"
+author: "Gian Lima"
+date: "2023-07-21"
+categories: [paper,ggplot2]
+toc: true
+toc-depth: 5
+toc-location: right
+code-fold: false
+code-overflow: wrap
 ---
 
-This is an example first post. Whatever you write here will appear inside your post.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE,
+                      cache = F) 
+```
 
-It is possible to write lists:
+Text text text
 
-1.  One
-2.  Two
-3.  Three
+## My fake data
 
-And make headers
+```{r}
+# library
+library(tidyverse)
+library(ggh4x)
 
-## This is a second level heading
+set.seed(4)
+x <- rnorm(100, 50, 10)
+y <- rnorm(100, 200, 2)
+group <- sample(LETTERS[1:4], size = 100, replace = T)
+year <- sample(c(2020:2021), size = 100, replace = T)
 
-You can include images, and many other kinds of content.
+df <- data.frame(x,y,group,year)
+```
 
-If you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:
+## Standard ggplot
 
-![](thumbnail.jpg)
+```{r}
+df %>% 
+  ggplot(aes(x,y)) +
+  geom_point() +
+  facet_grid(group~year)
+```
 
-The first image in a blog post will also be used on the listings page.
+## Common changes to make
+
+So I thought of some common changes considering a figure with panels.
+
+![](ggplot_instructions.png)
+
+## New figure
+
+```{r}
+df %>% 
+  ggplot(aes(x,y)) +
+  geom_point() +
+  facet_grid2(group~year, axes = "all", remove_labels = "all") + # change 18 
+  scale_x_continuous(breaks = seq(30,75,10), # change 12 
+                     minor_breaks = seq(30,75,5), # change 11 
+                     guide = "axis_minor", # change 11
+                     limits = c(30,75)) + 
+  scale_y_continuous(breaks = seq(190,210,5), # change 8 
+                     minor_breaks = seq(190,210,1), # change 7 
+                     guide = "axis_minor", # change 7 
+                     limits = c(190,210)) +
+  # change 19
+  theme(panel.border = element_rect(linewidth = 1, colour = "black", fill = NA))+
+  theme(axis.line.x = element_blank())+
+  theme(axis.text =element_text(face="plain",size=12, colour="black"))+
+  theme(panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "white", color = NA)) + # change 2
+  # change 15 and 16
+  theme(strip.text = element_text(size = 12, color = "black", face = "bold")) +
+  theme(strip.text.y = element_text(angle = 90)) + # change 17
+  theme(strip.background = element_blank()) + # change 14
+  theme(axis.ticks.length.x = unit(0.3, "cm"), # change 10 
+        axis.ticks.length.y = unit(0.2, "cm"), # change 10 
+        ggh4x.axis.ticks.length.minor = rel(0.5)) + # size of minor ticks
+  labs(y = "Variable Y", x = "Variable X") # change 9 and 13
+```
+
+In case I don't remember any element, I usually go check [this app](https://ggplot2tor.com/theme) on GGPLOT2TOR+.
+
+::: callout-note
+In this case, the groups are represented by only one letter (A, B, C and D), so I could have changed the angle, but in case it's a word, I prefer `angle = 90`.
+:::
