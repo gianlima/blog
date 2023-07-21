@@ -11,33 +11,47 @@
     "href": "index.html",
     "title": "quartoCourseBlog",
     "section": "",
-    "text": "goals\n\n\ngeneral\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\ngoals\n\n\ngeneral\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\nNo matching items"
+    "text": "goals\n\n\ngeneral\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\ngoals\n\n\ngeneral\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\ngoals\n\n\ngeneral\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Example_assignment/index.html",
     "href": "posts/Example_assignment/index.html",
-    "title": "Example assignment",
+    "title": "Example assignment: changed text",
     "section": "",
     "text": "This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\nYou should write a minimum of 250 words, but feel free to write more. Submit your document on blackboard by the due date."
   },
   {
     "objectID": "posts/Example_assignment/index.html#my-mental-imagery",
     "href": "posts/Example_assignment/index.html#my-mental-imagery",
-    "title": "Example assignment",
+    "title": "Example assignment: changed text",
+    "section": "My mental imagery",
+    "text": "My mental imagery\nMy mental imagery is like…"
+  },
+  {
+    "objectID": "posts/hey/index.html",
+    "href": "posts/hey/index.html",
+    "title": "hey epa!",
+    "section": "",
+    "text": "This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\nYou should write a minimum of 250 words, but feel free to write more. Submit your document on blackboard by the due date."
+  },
+  {
+    "objectID": "posts/hey/index.html#my-mental-imagery",
+    "href": "posts/hey/index.html#my-mental-imagery",
+    "title": "hey epa!",
     "section": "My mental imagery",
     "text": "My mental imagery\nMy mental imagery is like…"
   },
   {
     "objectID": "posts/my_first_post/index.html",
     "href": "posts/my_first_post/index.html",
-    "title": "My First post",
+    "title": "My First post: changed",
     "section": "",
     "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
   },
   {
     "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
     "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First post",
+    "title": "My First post: changed",
     "section": "This is a second level heading",
     "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
   },
