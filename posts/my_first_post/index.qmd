@@ -8,6 +8,7 @@ toc-depth: 5
 toc-location: right
 code-fold: false
 code-overflow: wrap
+page-layout: article
 ---
 
 ```{r setup, include=FALSE}
@@ -66,7 +67,7 @@ df %>%
                      limits = c(190,210)) +
   # change 19
   theme(panel.border = element_rect(linewidth = 1, colour = "black", fill = NA))+
-  theme(axis.line.x = element_blank())+
+  # size of axis text
   theme(axis.text =element_text(face="plain",size=12, colour="black"))+
   theme(panel.background = element_rect(fill = "transparent"),
         plot.background = element_rect(fill = "white", color = NA)) + # change 2
@@ -85,3 +86,7 @@ In case I don't remember any element, I usually go check [this app](https://ggpl
 ::: callout-note
 In this case, the groups are represented by only one letter (A, B, C and D), so I could have changed the angle, but in case it's a word, I prefer `angle = 90`.
 :::
+
+
+
+
